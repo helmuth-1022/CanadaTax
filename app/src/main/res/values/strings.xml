@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Canadian Income Tax Calculator with Real Time Currency Conversion</string>
+
+    <string name="Input_Title">Input Values</string>
+    <string name="Input_YearLabel">Year:</string>
+    <string name="Input_IncomeLabel">Income:</string>
+    <string name="Input_IncomeHint">Enter Gross Income</string>
+    <string name="Input_RRSPLabel">RRSP:</string>
+    <string name="Input_RRSPHint">Enter RRSP (Optional)</string>
+    <string name="Input_ProvinceLabel">Province:</string>
+    <string name="Input_CurrencyLabel">Currency:</string>
+    <string name="Input_ContinueLabel">Continue</string>
+    <string name="Input_AnnualHourlyLabel"></string>
+    <string name="Input_HoursLabel">Hours/Week:</string>
+    <string name="Input_HoursHint"></string>
+    <string name="Input_DefaultHours">40</string>
+    <string name="Input_40HoursLabel">40</string>
+    <string name="Input_37HoursLabel">37.5</string>
+
+    <string name="Input_HourlyRateTooHighError">Very high hourly rate.  Maybe should be annual
+    value?</string>
+    <string name="Input_HourlyRateTooHighError_PopupTitle">Income Value Too High</string>
+    <string name="Input_HourlyRateTooHighError_PopupMessage">The value entered for the hourly rate is
+    too high.  Please enter a smaller value, or switch to annual income.</string>
+    <string name="Input_HourlyRateTooHighError_PopupConfirm">OK</string>
+
+
+    <string name="Output_Title">Summary</string>
+
+    <string name="Output_Breakdown_Title">Breakdown</string>
+    <string name="Output_Breakdown_Header">Income breakdown for &lt;b&gt;%v&lt;/b&gt;
+        in the year &lt;b&gt;%y&lt;/b&gt;:</string>
+    <string name="Output_Breakdown_FedLabel">Federal Tax:</string>
+    <string name="Output_Breakdown_ProvLabel">Provincial Tax:</string>
+    <string name="Output_Breakdown_TotalLabel">Total Tax:</string>
+    <string name="Output_Breakdown_NetLabel">After Tax Income:</string>
+    <string name="Output_Breakdown_RateLabel">Average Tax Rate:</string>
+    <string name="Output_Breakdown_RefundLabel">RRSP Refund:</string>
+    <string name="Output_Breakdown_CurrencyLabel">Currency:</string>
+    <string name="Output_Breakdown_GraphFed">Fed ($v)</string>
+    <string name="Output_Breakdown_GraphProv">Prov ($v)</string>
+    <string name="Output_Breakdown_GraphIncome">Net ($v)</string>
+    <string name="Output_Breakdown_GraphRRSPTax">RRSP Tax ($v)</string>
+    <string name="Output_Breakdown_GraphRRSP">RRSP ($v)</string>
+    <string name="Output_Breakdown_Plus">+</string>
+    <string name="Output_Breakdown_Equals">=</string>
+
+    <string name="Output_Periodic_Title">Periodic Income</string>
+    <string name="Output_Periodic_Header">After tax income of &lt;b&gt;%v&lt;/b&gt;:</string>
+    <string name="Output_Periodic_MonthlyLabel">Monthly:</string>
+    <string name="Output_Periodic_BiWeeklyLabel">Bi-Weekly:</string>
+    <string name="Output_Periodic_WeeklyLabel">Weekly:</string>
+    <string name="Output_Periodic_QuarterlyLabel">Quarterly:</string>
+    <string name="Output_Periodic_CurrencyLabel">Currency:</string>
+    <string name="Output_Periodic_Hourly37Label">Hourly (37.5h/wk):</string>
+    <string name="Output_Periodic_Hourly40Label">Hourly (40h/wk):</string>
+
+    <string name="About_Title">About</string>
+    <string name="About_Text">
+        Last currency update: &lt;b&gt;%t&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; &lt;br/&gt;
+
+        This app was developed by Christopher Dilley of Sprelf Solutions.  For more information,
+        or for any comments, questions, or bug reports, please e-mail:&lt;br/&gt; 
+        christopher.dilley@sprelf.com&lt;br/&gt; &lt;br/&gt; 
+
+        This app provides estimates of Canadian Federal and Provincial tax values as provided by:&lt;br/&gt; 
+        &lt;a href=&quot;http://www.cra-arc.gc.ca/tx/ndvdls/fq/txrts-eng.html&quot;&gt;
+        http://www.cra-arc.gc.ca/tx/ndvdls/fq/txrts-eng.html&lt;/a&gt;&lt;br/&gt; &lt;br/&gt; 
+
+        This app makes no guarantee of accuracy and cannot be held liable for any discrepancies with
+        real values.  As always, please consult your tax adviser.&lt;br/&gt; &lt;br/&gt; 
+
+        Conversion rates are updated hourly and are provided by:&lt;br/&gt; 
+        &lt;a href=&quot;http://jsonrates.com/&quot;&gt;http://jsonrates.com/&lt;/a&gt;&lt;br/&gt; 
+        Updating conversion rates relies on an active internet connection.  If no connection is
+        found, the app will use the last known values.&lt;br/&gt; &lt;br/&gt; 
+
+        Graphing library for pie graph provided by:&lt;br/&gt; 
+        &lt;a href=&quot;http://www.achartengine.org/&quot;&gt;http://www.achartengine.org/&lt;/a&gt;
+    </string>
+
+
+    <string-array name="Provinces">
+        <item>Alberta</item>
+        <item>British Columbia</item>
+        <item>Manitoba</item>
+        <item>New Brunswick</item>
+        <item>Newfoundland and Labrador</item>
+        <item>Northwest Territories</item>
+        <item>Nova Scotia</item>
+        <item>Nunavut</item>
+        <item>Ontario</item>
+        <item>Prince Edward Island</item>
+        <item>Quebec</item>
+        <item>Saskatchewan</item>
+        <item>Yukon</item>
+    </string-array>
+
+    <string-array name="Currencies">
+        <item>CAD</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>RUB</item>
+        <item>CHY</item>
+        <item>JPY</item>
+        <item>AUD</item>
+        <item>LKR</item>
+    </string-array>
+
+    <string-array name="Years">
+        <item>2016</item>
+        <item>2015</item>
+    </string-array>
+
+    <string-array name="AnnualHourly">
+        <item>Annually</item>
+        <item>Hourly</item>
+    </string-array>
+
+    <string name="title_activity_output">OutputActivity</string>
+    <string name="action_about">About</string>
+
+</resources>

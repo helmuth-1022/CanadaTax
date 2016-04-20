@@ -1,0 +1,25 @@
+26.12.15 11:25-12:30, 16:20-?? =
+5 hours work, 5 hours total
+
+	- Initialized project
+	- Set up string values in resource file
+	- Constructed layouts for all activities and fragments
+	- Set up tax calculations (needs debugging)
+	
+27.12.15 12:00-13:20, 13:50-15:10, 16:40-19:40 =
+5.66 hours work, 10.66 hours total
+
+	- Set up currency exchanger
+	- Set up HTTP querying for updated currency conversion data
+	- Set up storing of currency preferences
+	- Added Pie Graph in breakdown fragment
+	
+28.12.15 11:30-11:45, 13:05-14:25,  =
+1.5 hours work, 12.16 hours total
+
+	- Reformatted tax data into JSON file
+	- Added About page
+
+????????????ßß
+	
+	

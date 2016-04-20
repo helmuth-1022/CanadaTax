@@ -1,0 +1,167 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.sprelf.canadatax.PeriodicFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/backgroundpic"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Output_Periodic_Header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/Output_Periodic_Header"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PeriodicLabelText"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/Output_Periodic_CurrencyLabel"/>
+
+                    <Spinner
+                        android:id="@+id/Output_Periodic_CurrencySpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/PeriodicLabelText"
+                        android:text="@string/Output_Periodic_QuarterlyLabel"/>
+
+                    <TextView
+                        android:id="@+id/Output_Periodic_QuarterlyOutput"
+                        style="@style/PeriodicOutputText"
+                        android:text="PLACEHOLDER"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/PeriodicLabelText"
+                        android:text="@string/Output_Periodic_MonthlyLabel"/>
+
+                    <TextView
+                        android:id="@+id/Output_Periodic_MonthlyOutput"
+                        style="@style/PeriodicOutputText"
+                        android:text="PLACEHOLDER"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/PeriodicLabelText"
+                        android:text="@string/Output_Periodic_BiWeeklyLabel"/>
+
+                    <TextView
+                        android:id="@+id/Output_Periodic_BiWeeklyOutput"
+                        style="@style/PeriodicOutputText"
+                        android:text="PLACEHOLDER"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/PeriodicLabelText"
+                        android:text="@string/Output_Periodic_WeeklyLabel"/>
+
+                    <TextView
+                        android:id="@+id/Output_Periodic_WeeklyOutput"
+                        style="@style/PeriodicOutputText"
+                        android:text="PLACEHOLDER"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/PeriodicLabelText"
+                        android:text="@string/Output_Periodic_Hourly37Label"/>
+
+                    <TextView
+                        android:id="@+id/Output_Periodic_Hourly37Output"
+                        style="@style/PeriodicOutputText"
+                        android:text="PLACEHOLDER"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/PeriodicLabelText"
+                        android:text="@string/Output_Periodic_Hourly40Label"/>
+
+                    <TextView
+                        android:id="@+id/Output_Periodic_Hourly40Output"
+                        style="@style/PeriodicOutputText"
+                        android:text="PLACEHOLDER"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>

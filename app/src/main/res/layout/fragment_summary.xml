@@ -1,0 +1,205 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.sprelf.canadatax.SummaryFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/backgroundpic"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/Output_Breakdown_Header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/Output_Breakdown_Header"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/Output_Breakdown_ChartArea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BreakdownLabelText"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/Output_Breakdown_CurrencyLabel"/>
+
+                    <Spinner
+                        android:id="@+id/Output_Breakdown_CurrencySpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BreakdownLabelText"
+                    android:text="@string/Output_Breakdown_RateLabel"/>
+
+                <TextView
+                    android:id="@+id/Output_Breakdown_Rate"
+                    style="@style/BreakdownOutputText"
+                    android:text="PLACEHOLDER"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BreakdownLabelText"
+                    android:text="@string/Output_Breakdown_NetLabel"/>
+
+                <TextView
+                    android:id="@+id/Output_Breakdown_Net"
+                    style="@style/BreakdownOutputText"
+                    android:text="PLACEHOLDER"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BreakdownLabelText"
+                    android:text="@string/Output_Breakdown_FedLabel"/>
+
+                <View
+                    android:layout_width="@dimen/Output_PlusEqualsMargin"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/Output_Breakdown_Federal"
+                    style="@style/BreakdownOutputText"
+                    android:text="PLACEHOLDER"
+                    android:textColor="@color/colorRed"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BreakdownLabelText"
+                    android:text="@string/Output_Breakdown_ProvLabel"/>
+
+                <TextView
+                    android:layout_width="@dimen/Output_PlusEqualsMargin"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Output_Breakdown_Plus"/>
+
+
+                <TextView
+                    android:id="@+id/Output_Breakdown_Provincial"
+                    style="@style/BreakdownOutputText"
+                    android:background="@drawable/background_equalsline"
+                    android:singleLine="false"
+                    android:text="PLACEHOLDER"
+                    android:textColor="@color/colorRed"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BreakdownLabelText"
+                    android:text="@string/Output_Breakdown_TotalLabel"/>
+
+                <TextView
+                    android:layout_width="@dimen/Output_PlusEqualsMargin"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Output_Breakdown_Equals"/>
+
+                <TextView
+                    android:id="@+id/Output_Breakdown_Total"
+                    style="@style/BreakdownOutputText"
+                    android:text="PLACEHOLDER"
+                    android:textColor="@color/colorRed"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BreakdownLabelText"
+                    android:text="@string/Output_Breakdown_RefundLabel"/>
+
+                <TextView
+                    android:id="@+id/Output_Breakdown_Refund"
+                    style="@style/BreakdownOutputText"
+                    android:text="PLACEHOLDER"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>

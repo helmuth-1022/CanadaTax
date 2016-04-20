@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#888888</color>
+    <color name="colorPrimaryDark">#555555</color>
+    <color name="colorAccent">#BB6666</color>
+
+    <color name="colorBlack">#090909</color>
+    <color name="colorLightGreen">#22BB22</color>
+    <color name="colorGreen">#229922</color>
+    <color name="colorRed">#CC2222</color>
+    <color name="colorPurple">#CC66FF</color>
+    <color name="colorBlue">#2222CC</color>
+    <color name="colorYellow">#CCAA22</color>
+    <color name="colorLightBlue">#2299CC</color>
+
+    <color name="Graph_Color1">@color/colorPurple</color>
+    <color name="Graph_Color2">@color/colorBlue</color>
+    <color name="Graph_Color3">@color/colorLightGreen</color>
+    <color name="Graph_Color4">@color/colorYellow</color>
+
+</resources>
